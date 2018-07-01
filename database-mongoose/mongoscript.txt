@@ -1,0 +1,6 @@
+mongoimport --db reservationsMongo --collection Reservations --type csv --headerline  --file "/Users/patricia/Desktop/patricia-booking-service/fake-data-sdc/reservations.csv"
+mongoimport --db reservationsMongo --collection Accomodations --type csv --headerline  --file "/Users/patricia/Desktop/patricia-booking-service/fake-data-sdc/accomodations.csv"
+mongoimport --db reservationsMongo --collection Owners --type csv --headerline  --file "/Users/patricia/Desktop/patricia-booking-service/fake-data-sdc/owners.csv"
+mongoimport --db reservationsMongo --collection Reviews --type csv --headerline  --file "/Users/patricia/Desktop/patricia-booking-service/fake-data-sdc/reviews.csv"
+mongoimport --db reservationsMongo --collection Users --type csv --headerline  --file "/Users/patricia/Desktop/patricia-booking-service/fake-data-sdc/users.csv"
+
