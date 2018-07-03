@@ -1,0 +1,18 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.5
+        environment:
+          POSTGRES_USER: patricia
+          POSTGRES_DB: reservations
+      - image: circleci/postgres:10.4-ram
+        environment:
+          POSTGRES_USER: patricia
+          POSTGRES_DB: reservations
+    steps:
+      - checkout
+      - run:
+      - run: npm install
+      - run: npm test
